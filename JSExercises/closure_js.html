@@ -1,0 +1,20 @@
+//closure is action in which inner fun can have access to the outer fun variables
+as well as all the global variables.when inner fun access the outer fun variables the closure
+is automatically created.
+
+<script>
+
+    const outerFun = (a) => {
+        let b = 10;
+        const innerFun = () => {
+            let sum = a + b;
+            console.log(`the sum of two num is ${sum}.`);
+            document. write("\n"); 
+            document.write("the sum of two num is",+sum);
+        }
+        innerFun();
+        }
+
+        outerFun(5);
+    
+</script>

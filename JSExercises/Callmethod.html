@@ -1,0 +1,18 @@
+<script>
+    const firstobj = {
+        name : "prashnat",
+        lastname : "Londhe",
+        info: function(middlename,age){
+            document.write(`my name is ${this.name} and lastname is ${this.lastname}
+             middle name is ${middlename} and age is ${age}.`);
+        }
+    }
+    //firstobj.info();
+    const secobj = {
+        name : "pratik",
+        lastname : "Patil",
+       
+    }
+    firstobj.info.call(secobj,"surkanat",29);
+    
+</script>
